@@ -1,11 +1,19 @@
 apiVersion: v1
 kind: Service
 metadata:
+<<<<<<< HEAD
   name: jenkins-nginx-service
 spec:
   type: LoadBalancer
   selector:
     app: jenkins-nginx
+=======
+  name: nginx-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx
+>>>>>>> e1ec15059a9572f9ab5a08683b7b4d8833a8ccfe
   ports:
     - protocol: TCP
       port: 80
